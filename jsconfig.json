@@ -1,7 +1,14 @@
 {
   "compilerOptions": {
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@variables": ["./src/styles/variables.module.scss"],
+      "@mixins": ["./src/styles/mixins.module.scss"],
+      "utils/*": ["./src/utils/*"],
+      "lib/*": ["./src/lib/*"],
+      "context/*": ["./src/context/*"],
+      "public/*": ["./public/*"],
+      "hooks/*": ["./src/hooks/*"]
     }
   }
 }

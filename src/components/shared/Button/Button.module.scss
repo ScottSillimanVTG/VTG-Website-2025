@@ -1,0 +1,32 @@
+@use '@variables' as variables;
+
+.button {
+  color: variables.$white;
+  background-color: variables.$secondaryColor;
+  text-transform: uppercase;
+  padding: 17px 58px;
+  font-size: 18px;
+  // font-family: $fontSecondaryBold;
+  letter-spacing: 1.5px;
+  border-radius: 9999px;
+  &.small {
+    padding: 12px 35px;
+    font-size: 13px;
+    border-radius: 20px;
+  }
+  &.variant {
+    // background-color: $lightGreen;
+    // color: $grey;
+  }
+  &.anchor {
+    text-decoration: none;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .button {
+    font-size: 16px;
+    padding: 12px 35px;
+  }
+}
