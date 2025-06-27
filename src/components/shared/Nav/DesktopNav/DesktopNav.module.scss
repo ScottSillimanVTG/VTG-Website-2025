@@ -1,24 +1,25 @@
 @use '@variables' as variables;
 
 .nav {
-  position: absolute;
   // font-family: $fontPrimaryBold;
   width: 100%;
   z-index: 1000;
-  .desktopList {
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-    padding: 20px 0 40px 60px;
-    width: 100%;
-    justify-content: space-between;
-    img {
-      display: block;
-      padding-right: 30px;
-    }
+}
+
+.desktopList {
+  display: flex;
+  align-items: flex-start;
+  list-style-type: none;
+  padding: 40px 0;
+  width: 100%;
+  justify-content: space-between;
+  img {
+    display: block;
+    padding-right: 30px;
   }
-  .navRight {
-    display: flex;
-    align-items: center;
-  }
+}
+
+.navRight {
+  display: flex;
+  align-items: center;
 }

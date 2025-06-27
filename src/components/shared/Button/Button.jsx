@@ -11,19 +11,22 @@ export default function Button({
   style = {},
 }) {
   const Element = href ? 'a' : 'button';
+  const classnames = clsx(
+    styles.button,
+    classNames,
+    isSmall && styles.small,
+    isVariant && styles.variant,
+    href && styles.anchor
+  );
+  if (href) {
+    return (
+      <Element style={style} className={classnames} href={href}>
+        {children}
+      </Element>
+    );
+  }
   return (
-    <Element
-      style={style}
-      className={clsx(
-        styles.button,
-        classNames,
-        isSmall && styles.small,
-        isVariant && styles.variant,
-        href && styles.anchor
-      )}
-      href={href}
-      onClick={handleClick}
-    >
+    <Element style={style} className={classnames} onClick={handleClick}>
       {children}
     </Element>
   );

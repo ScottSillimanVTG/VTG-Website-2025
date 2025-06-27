@@ -4,7 +4,7 @@
   position: relative;
   a:hover,
   &:hover .chevron {
-    color: variables.$secondaryColor;
+    // color: variables.$secondaryColor;
     transition: 0.3s;
   }
   button,
@@ -31,12 +31,12 @@
   }
 
   &.isActive a {
-    color: variables.$secondaryColor;
+    // color: variables.$secondaryColor;
     position: relative;
     &:before {
       content: '';
       background-color: rgba(0, 0, 0, 0);
-      border: 1px solid variables.$secondaryColor;
+      // border: 1px solid variables.$secondaryColor;
       height: 5px;
       width: 5px;
       border-radius: 50%;

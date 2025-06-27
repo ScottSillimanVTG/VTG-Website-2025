@@ -1,0 +1,16 @@
+.background {
+  position: absolute;
+  height: 1000px;
+  width: 100%;
+  background-image: url('/background.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.wave {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
