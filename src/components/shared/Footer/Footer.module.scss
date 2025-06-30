@@ -1,1 +1,21 @@
 @use '@variables' as variables;
+
+.innerContainer {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  align-items: flex-start;
+}
+
+.logo {
+  margin-right: 100px;
+}
+
+.list {
+  list-style: none;
+  text-transform: uppercase;
+  padding-top: 10px;
+  li {
+    padding-bottom: 20px;
+  }
+}

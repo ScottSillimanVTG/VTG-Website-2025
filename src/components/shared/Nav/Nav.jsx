@@ -4,7 +4,7 @@ import DesktopNav from './DesktopNav/DesktopNav';
 import MobileNav from './MobileNav/MobileNav';
 import { ROUTES } from '@/utils/constants';
 
-const navData = [
+export const navData = [
   { title: 'About', url: ROUTES.ABOUT },
   { title: 'Team', url: ROUTES.TEAM },
   { title: 'Case Studies', url: ROUTES.CASE_STUDIES },
