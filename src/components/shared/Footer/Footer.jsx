@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import logo from 'public/logo.png';
 import Wrapper from '../Wrapper/Wrapper';
+import Button from '../Button/Button';
 
 export default function Footer() {
   return (
@@ -20,6 +21,7 @@ export default function Footer() {
             </li>
           ))}
         </ul>
+        <Button classNames={styles.button}>Let's Chat</Button>
       </Wrapper>
     </footer>
   );
