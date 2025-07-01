@@ -7,6 +7,7 @@ import wave from 'public/wave.png';
 import Footer from '../shared/Footer/Footer';
 import Strategy from './Strategy/Strategy';
 import Services from './Services/Services';
+import Sponsors from './Sponsors/Sponsors';
 
 export default function HomePage() {
   return (
@@ -20,6 +21,7 @@ export default function HomePage() {
         <Strategy />
       </div>
       <Services />
+      <Sponsors />
       <Footer />
     </>
   );

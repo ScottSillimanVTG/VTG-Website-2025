@@ -1,0 +1,13 @@
+@use '@variables' as variables;
+
+@mixin fontPrimary {
+  font-family: 'Font Primary';
+  letter-spacing: 0.1px;
+  font-weight: normal;
+}
+
+@mixin fontPrimaryBold {
+  font-family: 'Font Primary Bold';
+  letter-spacing: 0.1px;
+  font-weight: normal;
+}
