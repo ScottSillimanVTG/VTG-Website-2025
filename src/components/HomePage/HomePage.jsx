@@ -8,6 +8,7 @@ import Footer from '../shared/Footer/Footer';
 import Strategy from './Strategy/Strategy';
 import Services from './Services/Services';
 import Sponsors from './Sponsors/Sponsors';
+import Testimoinals from './Testimoinals/Testimoinals';
 
 export default function HomePage() {
   return (
@@ -22,6 +23,7 @@ export default function HomePage() {
       </div>
       <Services />
       <Sponsors />
+      <Testimoinals />
       <Footer />
     </>
   );

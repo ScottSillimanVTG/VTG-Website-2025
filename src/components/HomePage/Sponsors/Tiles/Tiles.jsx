@@ -13,7 +13,6 @@ export default function Tiles({ sponsors }) {
 
   // Scroll animation
   useEffect(() => {
-    if (isMobile) return;
     const container = scrollRef.current;
     if (!container) return;
 
@@ -32,7 +31,7 @@ export default function Tiles({ sponsors }) {
 
     animationFrameId = requestAnimationFrame(animate);
     return () => cancelAnimationFrame(animationFrameId);
-  }, [isMobile]);
+  }, []);
 
   // Duplicate sponsors for infinite scroll
   const sponsorsWithDuplicates = !isMobile
@@ -40,12 +39,7 @@ export default function Tiles({ sponsors }) {
     : sponsors;
 
   return (
-    <div
-      className={clsx(
-        !isMobile ? styles.scrollContainer : styles.gridContainer
-      )}
-      ref={scrollRef}
-    >
+    <div className={styles.scrollContainer} ref={scrollRef}>
       {sponsorsWithDuplicates.map((mediaItem, index) => {
         return (
           <div

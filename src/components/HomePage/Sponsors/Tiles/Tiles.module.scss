@@ -3,7 +3,6 @@
 .logo {
   position: relative; // Required for layout="fill"
   overflow: hidden; // Crop overflowed image
-  cursor: none;
   display: flex;
   align-items: center;
   &:after {
@@ -40,12 +39,4 @@
     margin-right: 13px;
     flex-shrink: 0;
   }
-}
-
-.gridContainer {
-  width: 776px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 13px;
-  margin: 0 auto;
 }

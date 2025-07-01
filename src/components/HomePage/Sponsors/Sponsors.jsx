@@ -8,6 +8,7 @@ import maxio from 'public/sponsors/maxio.png';
 import salesforce from 'public/sponsors/salesforce.png';
 import sup from 'public/sponsors/sup.png';
 import Tiles from './Tiles/Tiles';
+import Button from '@/components/shared/Button/Button';
 
 const sponsors = [
   {
@@ -45,6 +46,9 @@ export default function Sponsors() {
     <div className={styles.container}>
       <h2 className={styles.title}>Growing Faster Together</h2>
       <Tiles sponsors={sponsors} />
+      <Button href="#" classNames={styles.button}>
+        Become a partner
+      </Button>
     </div>
   );
 }
