@@ -1,16 +1,9 @@
-.innerContainer {
-  position: relative;
-  height: 1000px;
-}
-
 .background {
-  position: absolute;
-  width: 100%;
-  height: 100%;
   background-image: url('/background.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  padding-bottom: 50px;
 }
 
 .wave {

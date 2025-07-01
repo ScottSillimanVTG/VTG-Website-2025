@@ -5,18 +5,18 @@ import Heading from './Heading/Heading';
 import styles from './HomePage.module.scss';
 import wave from 'public/wave.png';
 import Footer from '../shared/Footer/Footer';
+import Strategy from './Strategy/Strategy';
 
 export default function HomePage() {
   return (
     <>
-      <div className={styles.innerContainer}>
-        <div className={styles.background}>
-          <Wrapper>
-            <Image src={wave} alt="" className={styles.wave} />
-          </Wrapper>
-          <Nav />
-          <Heading />
-        </div>
+      <div className={styles.background}>
+        <Wrapper>
+          <Image src={wave} alt="" className={styles.wave} />
+        </Wrapper>
+        <Nav />
+        <Heading />
+        <Strategy />
       </div>
       <Footer />
     </>
