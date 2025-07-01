@@ -17,6 +17,7 @@
     display: flex;
     align-items: center;
     transition: 0.3s;
+    color: white;
   }
   &.isMobile {
     color: variables.$white;

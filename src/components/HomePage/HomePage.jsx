@@ -6,6 +6,7 @@ import styles from './HomePage.module.scss';
 import wave from 'public/wave.png';
 import Footer from '../shared/Footer/Footer';
 import Strategy from './Strategy/Strategy';
+import Services from './Services/Services';
 
 export default function HomePage() {
   return (
@@ -18,6 +19,7 @@ export default function HomePage() {
         <Heading />
         <Strategy />
       </div>
+      <Services />
       <Footer />
     </>
   );

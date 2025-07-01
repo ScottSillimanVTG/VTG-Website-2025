@@ -1,5 +1,9 @@
 @use '@variables' as variables;
 
+.footer {
+  background-color: variables.$black;
+}
+
 .innerContainer {
   display: flex;
   padding-top: 50px;
@@ -17,6 +21,7 @@
   padding-top: 10px;
   li {
     padding-bottom: 20px;
+    color: white;
   }
 }
 

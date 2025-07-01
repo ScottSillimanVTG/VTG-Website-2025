@@ -29,7 +29,7 @@ export default function Strategy() {
   return (
     <div className={styles.container}>
       <Wrapper>
-        <h2>
+        <h2 className={styles.heading}>
           Strategic Business Consulting to optimize <br />
           use of technology in your organization
         </h2>
