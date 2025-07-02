@@ -22,8 +22,8 @@ export default function HomePage() {
         <Strategy />
       </div>
       <Services />
-      <Sponsors />
       <Testimoinals />
+      <Sponsors />
       <Footer />
     </>
   );

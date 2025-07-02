@@ -1,13 +1,16 @@
 @use '@variables' as variables;
 
 @mixin fontPrimary {
-  font-family: 'Font Primary';
-  letter-spacing: 0.1px;
-  font-weight: normal;
+  font-family: var(--font-poppins), sans-serif;
+}
+
+@mixin fontPrimaryMedium {
+  font-family: var(--font-poppins), sans-serif;
+  font-weight: 500;
 }
 
 @mixin fontPrimaryBold {
-  font-family: 'Font Primary Bold';
-  letter-spacing: 0.1px;
-  font-weight: normal;
+  font-family: var(--font-poppins), sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
 }

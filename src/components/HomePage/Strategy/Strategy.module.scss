@@ -1,4 +1,5 @@
 @use '@variables' as variables;
+@use '@mixins' as mixins;
 
 .container {
   margin-top: 300px;
@@ -6,6 +7,7 @@
 
 .heading {
   color: white;
+  @include mixins.fontPrimaryBold;
 }
 
 .grid {
@@ -33,6 +35,8 @@
   text-align: center;
   color: variables.$black;
   position: relative;
+  @include mixins.fontPrimaryBold;
+  font-size: 24px;
   &:after {
     content: '';
     width: 100%;
@@ -48,4 +52,5 @@
   margin-top: auto;
   color: variables.$black;
   height: 80px;
+  @include mixins.fontPrimaryMedium;
 }

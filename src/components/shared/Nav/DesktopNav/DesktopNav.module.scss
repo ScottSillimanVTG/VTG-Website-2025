@@ -1,7 +1,8 @@
 @use '@variables' as variables;
+@use '@mixins' as mixins;
 
 .nav {
-  // font-family: $fontPrimaryBold;
+  @include mixins.fontPrimaryMedium;
   width: 100%;
   z-index: 1000;
 }
