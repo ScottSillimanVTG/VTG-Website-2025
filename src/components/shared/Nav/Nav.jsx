@@ -23,7 +23,7 @@ export const navData = [
 ];
 
 export default function Nav({ pathname }) {
-  const { isDesktop } = useWindowSize();
+  const { isDesktop, isMobile } = useWindowSize();
   const [isOpen, setIsOpen] = useState(false);
   return (
     <nav className={clsx(styles.nav)} id="navigation">
@@ -31,7 +31,13 @@ export default function Nav({ pathname }) {
         <ul className={styles.desktopList}>
           <li>
             <Link href="/">
-              <Image src={logo} width={300} height="auto" alt="Logo" priority />
+              <Image
+                src={logo}
+                width={isMobile ? 220 : 300}
+                height="auto"
+                alt="Logo"
+                priority
+              />
             </Link>
           </li>
           {isDesktop && (

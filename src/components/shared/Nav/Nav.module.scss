@@ -24,3 +24,9 @@
   display: flex;
   align-items: center;
 }
+
+@media screen and (max-width: variables.$mobile) {
+  .desktopList {
+    padding: 20px 0;
+  }
+}

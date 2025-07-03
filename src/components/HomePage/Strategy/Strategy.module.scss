@@ -54,3 +54,19 @@
   height: 80px;
   @include mixins.fontPrimaryMedium;
 }
+
+@media screen and (max-width: variables.$mobile) {
+  .container {
+    margin-top: 150px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .card {
+    margin: 0 auto 50px;
+  }
+  .details {
+    margin-top: 00px;
+  }
+}

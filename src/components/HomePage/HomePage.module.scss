@@ -1,3 +1,5 @@
+@use '@variables' as variables;
+
 .background {
   background-image: url('/background.png');
   background-position: center;
@@ -12,4 +14,17 @@
   height: auto;
   margin-top: 50px;
   left: 0;
+}
+
+@media screen and (max-width: variables.$mobile) {
+  .wave {
+    margin-top: 80px;
+    width: 200%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .background {
+    padding: 0;
+  }
 }

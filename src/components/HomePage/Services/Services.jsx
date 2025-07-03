@@ -1,9 +1,11 @@
+'use client';
 import Wrapper from '@/components/shared/Wrapper/Wrapper';
 import styles from './Services.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import useWindowSize from '@/hooks/useWindowSize';
 
-export const services = [
+const services = [
   'Business Process Design',
   'Marketing Strategy',
   'Marketing Operations Consulting',
@@ -27,22 +29,30 @@ const chunkArray = arr => {
 };
 
 export default function Services() {
+  const { isMobile } = useWindowSize();
   const serviceChunks = chunkArray(services);
 
   return (
     <Wrapper classNames={styles.container}>
       <h2 className={styles.title}>Services</h2>
       <div className={styles.servicesWrapper}>
-        {serviceChunks.map((chunk, index) => (
-          <div key={`service-${index}`} className={styles.column}>
-            {chunk.map(service => (
+        {isMobile
+          ? services.map(service => (
               <div key={service} className={styles.service}>
                 <FontAwesomeIcon icon={faPlus} />
                 <p>{service}</p>
               </div>
+            ))
+          : serviceChunks.map((chunk, index) => (
+              <div key={`service-${index}`} className={styles.column}>
+                {chunk.map(service => (
+                  <div key={service} className={styles.service}>
+                    <FontAwesomeIcon icon={faPlus} />
+                    <p>{service}</p>
+                  </div>
+                ))}
+              </div>
             ))}
-          </div>
-        ))}
       </div>
     </Wrapper>
   );

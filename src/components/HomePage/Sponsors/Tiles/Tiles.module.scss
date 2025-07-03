@@ -1,4 +1,5 @@
 @use '@mixins' as mixins;
+@use '@variables' as variables;
 
 .logo {
   position: relative; // Required for layout="fill"
@@ -38,5 +39,12 @@
   .logo {
     margin-right: 13px;
     flex-shrink: 0;
+  }
+}
+
+@media screen and (max-width: variables.$mobile) {
+  .image {
+    width: 180px;
+    padding: 0 20px;
   }
 }

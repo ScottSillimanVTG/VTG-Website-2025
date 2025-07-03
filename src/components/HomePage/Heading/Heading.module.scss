@@ -1,8 +1,22 @@
 @use '@mixins' as mixins;
+@use '@variables' as variables;
 
 .title {
   font-size: 60px;
   margin: 80px 0;
   color: white;
   @include mixins.fontPrimaryBold;
+}
+
+@media screen and (max-width: variables.$tablet) {
+  .title {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: variables.$mobile) {
+  .title {
+    font-size: 28px;
+    margin: 20px 0 30px;
+  }
 }
