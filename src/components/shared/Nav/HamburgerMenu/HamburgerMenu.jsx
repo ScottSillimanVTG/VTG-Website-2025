@@ -5,9 +5,9 @@ import clsx from 'clsx';
 export default function HamburgerMenu({
   isOpen = false,
   setIsOpen,
-  hamburgerMenuColor = '#2f2f2f',
+  hamburgerMenuColor = '#fff',
 }) {
-  const backgroundColor = isOpen ? '#2f2f2f' : hamburgerMenuColor;
+  const backgroundColor = isOpen ? '#fff' : hamburgerMenuColor;
   return (
     <button
       className={clsx(styles.hamburgerMenu, isOpen ? styles.open : '')}
