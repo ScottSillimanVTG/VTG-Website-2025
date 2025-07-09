@@ -2,14 +2,13 @@
 @use '@mixins' as mixins;
 
 .container {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .title {
   color: variables.$primaryColor;
-  @include mixins.fontPrimaryBold;
-  font-size: 28px;
+  @include mixins.subheading;
 }
 
 .servicesWrapper {
@@ -19,15 +18,21 @@
   gap: 200px;
 }
 
+.categoryTitle {
+  @include mixins.fontPrimaryBold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
 .service {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
   @include mixins.fontPrimaryMedium;
+  margin-bottom: 10px;
   svg {
     width: 10px;
     color: variables.$primaryColor;
-    margin-right: 15px;
+    margin-right: 20px;
   }
 }
 

@@ -7,16 +7,13 @@ import Image from 'next/image';
 
 const data = [
   {
-    label: 'TEAM BASED MODEL',
-    details:
-      "VTG's team based model ensures industry expertise, diverse points of view and critical redundancy for every project",
-    image: teamBased,
-  },
-  {
     label: 'ZERO HANDOFF',
     details:
       'The team that scopes your project is the team that delivers the outcomes, avoiding costly miscommunications.',
     image: zeroHandoff,
+    styles: {
+      padding: '0 40px',
+    },
   },
   {
     label: 'MVP MINDSET',
@@ -24,14 +21,21 @@ const data = [
       'We believe in the rule of 80/20. Rapid iteration allows us to prioritize key milestones and deliver value fast.',
     image: paredo,
   },
+  {
+    label: 'TEAM BASED MODEL',
+    details:
+      "VTG's team based model ensures industry expertise, diverse points of view and critical redundancy for every project.",
+    image: teamBased,
+  },
 ];
 export default function Strategy() {
   return (
     <div className={styles.container}>
       <Wrapper>
         <h2 className={styles.heading}>
-          Strategic Business Consulting to optimize <br />
-          use of technology in your organization
+          <span className={styles.bold}>The Venture Tech Way</span>
+          <br />
+          Business Technology Consulting
         </h2>
         <div className={styles.grid}>
           {data.map((item, index) => (
@@ -41,6 +45,7 @@ export default function Strategy() {
                 src={item.image}
                 alt={item.label}
                 className={styles.image}
+                style={item.styles}
               />
               <p className={styles.details}>{item.details}</p>
             </div>

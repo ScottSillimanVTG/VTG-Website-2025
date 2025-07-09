@@ -44,7 +44,7 @@ const sponsors = [
 export default function Sponsors() {
   return (
     <div className={styles.container}>
-      <h2 className={styles.title}>Growing Faster Together</h2>
+      <h2 className={styles.title}>Experts In Your Revenue Tech Stack</h2>
       <Tiles sponsors={sponsors} />
       <Button href="#" classNames={styles.button}>
         Become a partner

@@ -2,7 +2,7 @@
 
 @mixin wrapper {
   margin: 0 auto;
-  padding: 0 35px;
+  padding: 0 55px;
   display: block;
   position: relative;
   @media screen and (max-width: variables.$tablet) {

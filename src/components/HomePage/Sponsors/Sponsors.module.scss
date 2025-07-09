@@ -2,11 +2,8 @@
 @use '@mixins' as mixins;
 
 .container {
-  background-image: url('/background-1.png');
-  background-position: center -650px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 30px 0 80px;
+  background-color: variables.$primaryColor;
+  padding: 60px 0 60px;
   display: flex;
   flex-direction: column;
 }
@@ -15,7 +12,8 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 20px;
-  @include mixins.fontPrimaryBold;
+  color: white;
+  @include mixins.subheading;
 }
 
 .button {

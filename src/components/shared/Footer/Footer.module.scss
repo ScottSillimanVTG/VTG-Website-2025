@@ -6,10 +6,10 @@
 }
 
 .innerContainer {
-  display: flex;
+  display: grid;
   padding-top: 50px;
   padding-bottom: 50px;
-  align-items: flex-start;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .logo {
@@ -27,8 +27,28 @@
   }
 }
 
-.button {
+.buttons {
   margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.button {
+  margin-bottom: 15px;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  justify-content: flex-end;
+}
+
+.glassdoor {
+  margin-right: 15px;
+  padding-top: 7px;
 }
 
 @media screen and (max-width: variables.$mobile) {

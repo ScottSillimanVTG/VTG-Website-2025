@@ -2,12 +2,16 @@
 @use '@mixins' as mixins;
 
 .container {
-  margin-top: 300px;
+  margin-top: 180px;
 }
 
 .heading {
   color: white;
-  @include mixins.fontPrimaryBold;
+  @include mixins.fontPrimaryLight;
+  font-size: 35px;
+  .bold {
+    @include mixins.subheading;
+  }
 }
 
 .grid {

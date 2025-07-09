@@ -1,6 +1,9 @@
 @use '@variables' as variables;
 
 .container {
-  height: 300px;
-  background-color: variables.$primaryColor;
+  height: 450px;
+  background-image: url('/gradient-light.png');
+  background-position: center -650px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }

@@ -10,7 +10,6 @@ export default function Heading() {
     <Wrapper>
       <h1 className={styles.title}>
         Reach Your {isMobile && <br />} Revenue Potential
-        {!isMobile && <br />} The VentureTech Way
       </h1>
       <Button href="#">Let's Chat</Button>
     </Wrapper>

@@ -2,7 +2,7 @@
 @use '@variables' as variables;
 
 .title {
-  font-size: 60px;
+  font-size: 70px;
   margin: 80px 0;
   color: white;
   @include mixins.fontPrimaryBold;

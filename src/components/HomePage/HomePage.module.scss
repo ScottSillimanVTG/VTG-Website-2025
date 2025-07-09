@@ -1,7 +1,7 @@
 @use '@variables' as variables;
 
 .background {
-  background-image: url('/background.png');
+  background-image: url('/gradient.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -12,7 +12,6 @@
   position: absolute;
   width: 100%;
   height: auto;
-  margin-top: 50px;
   left: 0;
 }
 
