@@ -8,22 +8,20 @@ import Footer from '../shared/Footer/Footer';
 import Strategy from './Strategy/Strategy';
 import Services from './Services/Services';
 import Sponsors from './Sponsors/Sponsors';
-import Testimoinals from './Testimoinals/Testimoinals';
 
 export default function HomePage() {
   return (
     <>
       <div className={styles.background}>
-        <Wrapper>
+        <div className={styles.viewport}>
           <Image src={wave} alt="" className={styles.wave} />
-        </Wrapper>
-        <Nav />
-        <Heading />
+          <Nav />
+          <Heading />
+        </div>
         <Strategy />
       </div>
       <Services />
       <Sponsors />
-      <Testimoinals />
       <Footer />
     </>
   );

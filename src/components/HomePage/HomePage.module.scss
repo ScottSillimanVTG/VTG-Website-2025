@@ -8,11 +8,17 @@
   padding-bottom: 50px;
 }
 
+.viewport {
+  min-height: 80vh;
+  position: relative;
+}
+
 .wave {
   position: absolute;
   width: 100%;
   height: auto;
   left: 0;
+  top: -20px;
 }
 
 @media screen and (max-width: variables.$mobile) {
@@ -25,5 +31,9 @@
 
   .background {
     padding: 0;
+  }
+
+  .viewport {
+    min-height: 0;
   }
 }

@@ -1,10 +1,6 @@
 @use '@variables' as variables;
 @use '@mixins' as mixins;
 
-.container {
-  margin-top: 180px;
-}
-
 .heading {
   color: white;
   @include mixins.fontPrimaryLight;
@@ -28,10 +24,11 @@
 }
 
 .image {
-  width: 80%;
   height: auto;
   display: block;
   margin: 30px auto;
+  width: 400px;
+  padding: 0 40px;
 }
 
 .title {
@@ -72,5 +69,12 @@
   }
   .details {
     margin-top: 00px;
+  }
+  .heading {
+    font-size: 22px;
+  }
+  .image {
+    width: 100%;
+    padding: 0;
   }
 }

@@ -28,7 +28,7 @@ export default function Footer() {
           <Button isSmall classNames={styles.button}>
             Let's Chat
           </Button>
-          <Button isSmall isVariant>
+          <Button isSmall isVariant classNames={styles.button}>
             Become a partner
           </Button>
           <div className={styles.socials}>

@@ -12,10 +12,11 @@ import { useState } from 'react';
 import { ROUTES } from '@/utils/constants';
 
 export const navData = [
-  { title: 'About', url: ROUTES.ABOUT },
-  { title: 'Team', url: ROUTES.TEAM },
-  { title: 'Case Studies', url: ROUTES.CASE_STUDIES },
-  { title: 'Resources', url: ROUTES.RESOURCES },
+  // { title: 'About', url: ROUTES.ABOUT },
+  // { title: 'Team', url: ROUTES.TEAM },
+  // { title: 'Case Studies', url: ROUTES.CASE_STUDIES },
+  // { title: 'Resources', url: ROUTES.RESOURCES },
+  { title: 'Services', url: '#services' },
   {
     title: 'Contact',
     url: ROUTES.CONTACT,

@@ -12,7 +12,7 @@ const data = [
       'The team that scopes your project is the team that delivers the outcomes, avoiding costly miscommunications.',
     image: zeroHandoff,
     styles: {
-      padding: '0 40px',
+      padding: '0 80px',
     },
   },
   {
