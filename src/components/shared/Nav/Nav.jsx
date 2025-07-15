@@ -17,6 +17,7 @@ export const navData = [
   // { title: 'Case Studies', url: ROUTES.CASE_STUDIES },
   // { title: 'Resources', url: ROUTES.RESOURCES },
   { title: 'Services', url: '#services' },
+  { title: 'Partner', url: '#partner' },
   {
     title: 'Contact',
     url: ROUTES.CONTACT,
@@ -26,6 +27,7 @@ export const navData = [
 export default function Nav({ pathname }) {
   const { isDesktop, isMobile } = useWindowSize();
   const [isOpen, setIsOpen] = useState(false);
+  const showNavLinks = isDesktop || isOpen;
   return (
     <nav className={clsx(styles.nav)} id="navigation">
       <Wrapper>
@@ -38,10 +40,11 @@ export default function Nav({ pathname }) {
                 height="auto"
                 alt="Logo"
                 priority
+                className={styles.logo}
               />
             </Link>
           </li>
-          {isDesktop && (
+          {showNavLinks && (
             <div className={styles.navRight}>
               <NavLinks navData={navData} pathname={pathname} />
             </div>

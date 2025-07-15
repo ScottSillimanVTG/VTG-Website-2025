@@ -1,22 +1,16 @@
 import React from 'react';
 import styles from './HamburgerMenu.module.scss';
 import clsx from 'clsx';
+import Image from 'next/image';
+import hamburger from 'public/hamburger.png';
 
-export default function HamburgerMenu({
-  isOpen = false,
-  setIsOpen,
-  hamburgerMenuColor = '#fff',
-}) {
-  const backgroundColor = isOpen ? '#fff' : hamburgerMenuColor;
+export default function HamburgerMenu({ isOpen = false, setIsOpen }) {
   return (
     <button
       className={clsx(styles.hamburgerMenu, isOpen ? styles.open : '')}
       onClick={() => setIsOpen(!isOpen)}
     >
-      <span style={{ backgroundColor }}></span>
-      <span style={{ backgroundColor }}></span>
-      <span style={{ backgroundColor }}></span>
-      <span style={{ backgroundColor }}></span>
+      <Image src={hamburger} alt="" className={styles.image} />
     </button>
   );
 }

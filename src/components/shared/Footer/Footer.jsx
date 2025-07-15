@@ -24,13 +24,15 @@ export default function Footer() {
             </li>
           ))}
         </ul>
-        <div className={styles.buttons}>
-          <Button isSmall classNames={styles.button}>
-            Let's Chat
-          </Button>
-          <Button isSmall isVariant classNames={styles.button}>
-            Become a partner
-          </Button>
+        <div className={styles.rightContainer}>
+          <div className={styles.buttons}>
+            <Button isSmall classNames={styles.button}>
+              Let's Chat
+            </Button>
+            <Button isSmall isVariant>
+              Become a partner
+            </Button>
+          </div>
           <div className={styles.socials}>
             <a
               href="https://www.glassdoor.ca/Overview/Working-at-VentureTech-Group-EI_IE5066935.11,28.htm"
