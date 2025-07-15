@@ -46,7 +46,12 @@ export default function Nav({ pathname }) {
           </li>
           {showNavLinks && (
             <div className={styles.navRight}>
-              <NavLinks navData={navData} pathname={pathname} />
+              <NavLinks
+                navData={navData}
+                pathname={pathname}
+                isOpen={isOpen}
+                setIsOpen={setIsOpen}
+              />
             </div>
           )}
           {!isDesktop && (
