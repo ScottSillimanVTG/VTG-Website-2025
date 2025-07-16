@@ -1,11 +1,23 @@
 @use '@mixins' as mixins;
 @use '@variables' as variables;
 
+.outerContainer {
+  overflow: hidden;
+}
+
+.innerScrollContainer {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
 .logo {
   position: relative; // Required for layout="fill"
   overflow: hidden; // Crop overflowed image
   display: flex;
   align-items: center;
+  margin-right: 13px;
+  flex-shrink: 0;
+
   &:after {
     content: '';
     position: absolute;
@@ -20,26 +32,9 @@
 }
 
 .image {
-  // object-fit: cover;
   width: 200px;
   height: auto;
   padding: 30px;
-}
-
-.scrollContainer {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: scroll;
-  scroll-behavior: auto;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE/Edge */
-  &::-webkit-scrollbar {
-    display: none; /* Chrome, Safari */
-  }
-  .logo {
-    margin-right: 13px;
-    flex-shrink: 0;
-  }
 }
 
 @media screen and (max-width: variables.$mobile) {
