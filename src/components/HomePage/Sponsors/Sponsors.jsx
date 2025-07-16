@@ -8,8 +8,8 @@ import maxio from 'public/sponsors/maxio.svg';
 import salesforce from 'public/sponsors/salesforce.png';
 import sup from 'public/sponsors/sup.png';
 import Tiles from './Tiles/Tiles';
-import clay from 'public/sponsors/clay.jpg';
-import fivetran from 'public/sponsors/fivetran.jpg';
+import clay from 'public/sponsors/clay.png';
+import fivetran from 'public/sponsors/fivetran.png';
 import Button from '@/components/shared/Button/Button';
 
 const sponsors = [
