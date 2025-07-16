@@ -33,7 +33,7 @@ export default function Strategy() {
     <div className={styles.container}>
       <Wrapper>
         <h2 className={styles.heading}>
-          <span className={styles.bold}>The Venture Tech Way</span>
+          <span className={styles.bold}>The VentureTech Way</span>
           <br />
           Business Technology Consulting
         </h2>

@@ -6,10 +6,10 @@
 }
 
 div.innerContainer {
-  display: grid;
+  display: flex;
   padding-top: 50px;
   padding-bottom: 50px;
-  grid-template-columns: repeat(3, 1fr);
+  align-items: stretch; // ✨ make children equal height
 }
 
 .logo {
@@ -33,7 +33,7 @@ div.innerContainer {
 .rightContainer {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  margin-left: auto;
 }
 
 .buttons {
@@ -58,14 +58,17 @@ div.innerContainer {
   padding-top: 7px;
 }
 
-@media screen and (max-width: variables.$mobile) {
+@media screen and (max-width: variables.$tablet) {
   div.innerContainer {
-    grid-template-columns: 1fr;
+    flex-direction: column;
     padding-top: 30px;
     padding-bottom: 30px;
   }
   .logo {
     margin: 0 0 30px 0;
+  }
+  .rightContainer {
+    margin-left: 0;
   }
   .buttons {
     grid-template-columns: 1fr;
